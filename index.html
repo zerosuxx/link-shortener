@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener v0.1</title>
+    <meta name="description" content="Create short, memorable links in seconds. Free URL shortener with analytics and tracking. Fast, secure, and reliable link management.">
+    <meta name="author" content="URL Shortener">
+    
+    <meta property="og:title" content="URL Shortener - Create Short Links Instantly">
+    <meta property="og:description" content="Create short, memorable links in seconds. Free URL shortener with analytics and tracking.">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <div class="page-wrapper">
+        <!-- Hero Section -->
+        <main class="container">
+            <div class="hero-content">
+                <!-- Icon -->
+                <div class="hero-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                </div>
+
+                <!-- Headline -->
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Shorten Your Links
+                        <span class="gradient-text">Track Everything</span>
+                    </h1>
+                    <p class="hero-description">
+                        Create short, memorable links in seconds. Share them anywhere and track their performance in real-time.
+                    </p>
+                </div>
+
+                <!-- URL Input Form -->
+                <form id="url-form" class="url-form">
+                    <div class="input-wrapper">
+                        <input
+                            type="url"
+                            id="url-input"
+                            placeholder="Enter your long URL here..."
+                            class="url-input"
+                            required
+                        >
+                        <input
+                            type="number"
+                            value="10000"
+                            id="count-input"
+                            placeholder="Usage limit"
+                            class="count-input"
+                            min="1"
+                            max="10000"
+                        >
+                        <button type="submit" class="submit-button">
+                            Shorten URL
+                        </button>
+                    </div>
+                </form>
+
+                <p class="form-note">
+                    No registration required • Free forever • Instant results
+                </p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Lightning Fast</h3>
+                    <p class="feature-description">
+                        Create shortened URLs instantly with our blazing-fast platform. No delays, just results.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-accent">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Secure & Reliable</h3>
+                    <p class="feature-description">
+                        Your links are protected with enterprise-grade security. Trust us to keep your data safe.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Detailed Analytics</h3>
+                    <p class="feature-description">
+                        Track clicks, locations, and devices. Get insights that help you understand your audience.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p class="footer-text">© 2025 URL Shortener</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
